@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="缪神徒弟">
+    
+    <meta name="description" content="缪神的徒弟">
+    
+    
+    
+    
+    
+    
+    <title>markdown排版 | Hexo</title>
+    <link href=”http://blogsonline.cn“ rel=”prefetch” />
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/aos.css">
+<link rel="stylesheet" href="/css/style.css">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/aos.js"></script>
+    <script src="/js/highslide/highslide-full.min.js"></script>
+    <link rel="stylesheet" href="/js/highslide/highslide.css">
+    <style type="text/css">
+        @media (max-width: 768px) {
+            body {
+                background-color: #f0f0f0;
+                background: url('/imgs/xsbg.gif');
+                background-attachment: fixed;
+            }
+        }
+    </style>
+    
+    <!--<script type="text/javascript">
+      if (document.images) {
+        var avatar = new Image();
+        avatar.src = '/imgs/avatar.jpg'
+        var previews = 'preview1.jpg,preview2.jpg,preview3.jpg,preview4.jpg'.split(',')
+        var previewsPreLoad = []
+        for(var i = 0; i < length; i++) {
+          previewsPreLoad.push(new Image())
+          previewsPreLoad[previewsPreLoad.length - 1].src = '/imgs/preview' + previews[i]
+        }
+      }
+    </script>-->
+</head>
+<body>
+    <!-- 背景轮播图功能 -->
+    <section class="hidden-xs">
+    <ul class="cb-slideshow">
+        <li><span>天若</span></li>
+        <li><span>有情</span></li>
+        <li><span>天亦老</span></li>
+        <li><span>我为</span></li>
+        <li><span>长者</span></li>
+        <li><span>续一秒</span></li>
+    </ul>
+</section>
+    <!-- 欧尼酱功能, 谁用谁知道 -->
+    
+    <div class="gal-menu gal-dropdown">
+    <div class="circle" id="gal">
+        <div class="ring">
+            <a href="http://blogsonline.cn" class="menuItem" style="left: 50%; top: 15%;">首页</a>
+            
+            <a class="menuItem" style="left: 80.3109%; top: 32.5%;">下一页</a>
+            
+            <a href="/archives" class="menuItem" style="left: 80.3109%; top: 67.5%;">归档</a>
+            <a href="/about" class="menuItem" style="left: 50%; top: 85%;">关于</a>
+            <a href="/message" class="menuItem" style="left: 19.6891%; top: 67.5%;">留言板</a>
+            
+            <a class="menuItem" style="left: 19.6891%; top: 32.5%;">上一页</a>
+            
+        </div>
+        <audio id="audio" src="/imgs/oni.mp3"></audio>
+    </div>
+</div>
+    
+    <header class="navbar navbar-inverse" id="gal-header">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse" data-target=".bs-navbar-collapse"
+                    aria-expanded="false">
+                <span class="fa fa-lg fa-reorder"></span>
+            </button>
+            <a href="http://blogsonline.cn">
+                
+                <style>
+                    #gal-header .navbar-brand {
+                        height: 54px;
+                        line-height: 24px;
+                        font-size: 28px;
+                        opacity: 1;
+                        background-color: rgba(0,0,0,0);
+                        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228DFF,0 0 35px #228DFF,0 0 40px #228DFF,0 0 50px #228DFF,0 0 75px #228DFF;
+                    }
+                </style>
+                <!-- 这里使用文字(navbar_text or config.title) -->
+                <div class="navbar-brand">Hexo</div>
+                
+            </a>
+        </div>
+        <div class="collapse navbar-collapse bs-navbar-collapse">
+            <ul class="nav navbar-nav" id="menu-gal">
+                
+                
+                <li class="">
+                    <a href="/">
+                        <i class="fa fa-home"></i>首页
+                    </a>
+                </li>
+                
+                
+                
+                <li class="">
+                    <a href="/archives">
+                        <i class="fa fa-archive"></i>归档
+                    </a>
+                </li>
+                
+                
+                
+                
+                <li class="">
+                    <a href="/categories">
+                        <i class="fa fa-list"></i>分类
+                    </a>
+                </li>
+                
+                
+                
+                
+                
+                <li class="">
+                    <a href="/tags">
+                        <i class="fa fa-tags"></i>标签
+                    </a>
+                </li>
+                
+                
+                
+                
+                <li class="">
+                    <a href="/about">
+                        <i class="fa fa-user"></i>关于我
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</header>
+    <div id="gal-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 gal-right" id="mainstay">
+                    
+<article class="article well article-body" id="article">
+    <div class="breadcrumb">
+        <i class="fa fa-home"></i>
+        <a href="http://blogsonline.cn">Hexo</a>
+        >
+        <span>markdown排版</span>
+    </div>
+    <!-- 大型设备详细文章 -->
+    <div class="hidden-xs">
+        <div class="title-article">
+            <h1>
+                <a href="/2018/05/22/markdown排版/">markdown排版</a>
+            </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2018-05-22
+            </span>
+            
+        </div>
+    </div>
+    <!-- 小型设备详细文章 -->
+    <div class="visible-xs">
+        <center>
+            <div class="title-article">
+                <h4>
+                    <a href="/2018/05/22/markdown排版/">markdown排版</a>
+                </h4>
+            </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2018-05-22
+            </p>
+            <p>
+                
+                
+            </p>
+        </center>
+    </div>
+    <div class="content-article">
+        <p>/<em>可任意修改样式，或恢复预设值，保存后生效<br>这是个综合的示例，所以对很多地方都进行了修改<br>相对“默认样式”而作的修改会用  红色 标注</em>/</p>
+<p>.output_wrapper/<em>此属性为全局</em>/<br>{<br>     font-size: 15px;/<em>更改默认的字体大小</em>/<br>     color: #3e3e3e;<br>     line-height: 1.8; /<em>更改默认的行距</em>/<br>     word-spacing:2px; /<em>更改默认的词间距</em>/<br>     letter-spacing:2px;/<em>更改默认的字符间距</em>/<br>     font-family: “Helvetica Neue”,Helvetica,”Hiragino Sans GB”,”Microsoft YaHei”,Arial,sans-serif;   </p>
+<pre><code>/*增加背景网格*/
+background-image: linear-gradient(90deg, rgba(50, 0, 0, 0.05) 3%, rgba(0, 0, 0, 0) 3%), linear-gradient(360deg,rgba(50, 0, 0, 0.05) 3%, rgba(0, 0, 0, 0) 3%);
+background-size: 20px 20px;
+background-position: center center;
+</code></pre><p>}<br>.output_wrapper *<br>{<br>  font-size: inherit  ;<br>  color: inherit;<br>  line-height: inherit;<br>  margin:0px;<br>  padding:0px;<br>}</p>
+<p>p {/<em>段落</em>/<br>  margin: 1.7em 0px;/<em>更改默认的段落距离</em>/<br>}<br>h1,h2,h3,h4,h5,h6 {<br>  margin: 1.6em 0px;/<em>增加默认的标题间距</em>/<br>  font-weight:bold;<br>}<br>h1 {<br>  font-size: 1.6em  ;</p>
+<p>}<br>h2 {<br>  font-size: 1.4em;<br>}<br>h3 {<br>  font-size: 1.3em;<br>}<br>h4 {<br>  font-size: 1.2em;<br>}<br>h5 {<br>  font-size: 1em;<br>}<br>h6 {<br>  font-size: 1em;<br>}</p>
+<p>h1{/<em>增加对h1标题的修改</em>/<br>  border-top:2px  solid   #039BE5;<br>}<br>h1 span{/<em>增加对h1标题字体的修改</em>/<br>  display:inline-block;<br>  font-weight:normal;<br>  background: #039BE5;<br>  color:#ffffff;<br>  padding:3px 10px 0px;<br>  border-bottom-right-radius: 3px;<br>  border-bottom-left-radius: 4px;<br>  border-bottom: 2px solid #006064;<br>  border-right: 3px solid #006064;<br>  margin-left:5px;<br>  margin-right:2px;<br> /<em>box-shadow: 2px 2px 15px black;</em>/<br>}</p>
+<p>h2{/<em>增加对h2标题的修改</em>/<br>  border-bottom:2px  solid   #00ACC1;<br>}<br>h2 span{/<em>增加对h2标题字体的修改</em>/<br>  display:inline-block;<br>  font-weight:normal;<br>  background: #00ACC1;<br>  color:#ffffff;<br>  padding:3px 10px 0px;<br>  border-top-right-radius: 3px;<br>  border-top-left-radius: 4px;<br>  margin-left:0px;<br>  margin-right:2px;<br>}</p>
+<p>h3{/<em>增加对h3标题的修改</em>/<br>   border-bottom:2px  solid   rgb(239,112,96);<br>   font-size: 1.3em;<br>}<br>h3 span{/<em>增加对h3标题字体的修改</em>/<br>  display:inline-block;<br>  font-weight:normal;<br>  background:rgb(239,112,96);<br>  color:#ffffff;<br>  padding:3px 10px 1px;<br>  border-top-right-radius: 3px;<br>  border-top-left-radius: 3px;<br>  margin-right:3px;<br>}<br>h3:after{/<em>增加对h3标题后面的修饰</em>/<br>  display: inline-block;<br>  content:” “;<br>  vertical-align: bottom;<br>  border-bottom: 36px solid #EFEBE9;<br>  border-right: 20px solid transparent;<br>}</p>
+<p>ul, ol {<br>  padding-left: 32px;<br>}<br>ul{ /<em>无序列表</em>/<br>    list-style-type: disc;<br>}<br>ol { /<em>有序列表</em>/<br>  list-style-type: decimal;<br>}<br>li <em><br>{<br> /</em> color: #3e3e3e;*/<br>} </p>
+<p>li{  /<em>在公众号下，改变不了li符号的属性（如颜色），并会影响其子元素的属性;而在其它博客平台中，则能正常使用</em>/<br>    margin-bottom: 0.5em;<br>/<em>  color:#159957; </em>/<br>}<br>.code_size_default  /<em>代码块默认size</em>/<br>{<br>  line-height: 18px;<br>  font-size: 14px;<br>  font-weight:normal;<br>  word-spacing:0px;<br>  letter-spacing:0px;<br>}<br>.code_size_tight /<em>代码块紧凑size</em>/<br>{<br>   line-height: 15px;<br>   font-size: 11px;<br>   font-weight:normal;<br>   word-spacing:-3px;<br>   letter-spacing:0px;<br>}<br>pre code /<em>代码块</em>/<br>{<br>     font-family: Consolas, Inconsolata, Courier, monospace;<br>     border-radius: 0px;<br>}<br>blockquote { /<em>引用块</em>/<br>  display: block;<br>  padding: 15px 1rem;<br>  font-size: 0.9em;<br>  padding-right: 15px;<br>  margin: 1em 0;</p>
+<p>  /<em>更改默认值</em>/<br>  color: #000000;<br>  border-left: 5px solid rgb(239,112,96);<br>  background: #EFEBE9;</p>
+<p>  overflow: auto;<br>  overflow-scrolling: touch;<br>  word-wrap: normal;<br>  word-break: normal;<br>}<br>blockquote p {<br>    margin: 0px;<br>}</p>
+<p>a { /<em>超链接</em>/<br>  text-decoration: none;<br>  color: #1e6bb8;<br>  word-wrap:break-word;<br>}</p>
+<p>strong  /<em>强调</em>/<br>{<br>  font-weight: bold;<br>  color:#e96900;/<em>更改默认的颜色</em>/<br>}<br>em /<em>斜体</em>/<br>{<br> /<em>font-style:italic;</em>//<em>把默认的斜体去掉</em>/<br> color:#6200EA;/<em>更改默认的颜色</em>/<br>}<br>del /<em>删除线</em>/<br>{<br> font-style:italic;<br> text-decoration:none;/<em>把默认的删除线去掉</em>/<br> color:#2962FF;/<em>更改默认的颜色</em>/<br>}<br>strong em/<em>强调的斜体</em>/<br>{<br>font-weight: bold;<br>color:#C51162;/<em>更改默认的颜色</em>/<br>}</p>
+<p>hr {  /<em>分隔线</em>/<br>/<em>更改默认的属性</em>/<br>  height: 8px;<br>  margin: 2.5rem 20px;<br>  border-radius:50%;<br>  border-top: 3px solid #A5A5A5;<br>}</p>
+<p>code /<em>行内代码</em>/<br>{<br>    word-wrap: break-word;<br>    padding: 2px 4px;<br>    border-radius: 4px;<br>    margin:0 2px;<br>    color:#f82375;/<em>更改默认的颜色</em>/<br>    background:#f8f8f8;<br>}<br>img<br>{<br>  display: block;<br>  margin:0 auto;  /<em>图片水平居中</em>/<br>  /<em> margin:0 0;  </em>/ /<em>图片水平居左，如需要请打开</em>/<br>  max-width:100%;<br>}<br>figcaption/<em>图片描述文字</em>/<br>{<br>  margin-top:10px;<br>  text-align:center;<br>   /<em> text-align:left;  </em>/ /<em>当图片水平居左时，请打开</em>/<br>  color:#999;<br>  font-size: 0.7em;<br>}</p>
+<p>/<em>================表格开始================</em>/<br>table<br>{<br> display:table;<br> width: 100% ;<br> text-align: left;<br>}<br>tbody {<br>  border: 0;<br>}</p>
+<p>table tr {<br>  border: 0;<br>  border-top: 1px solid #CCC;<br>  background-color: white;</p>
+<p>}</p>
+<p>/<em>隔行改变行的背景色</em>/<br>table tr:nth-child(2n) {<br>  background-color: #F8F8F8;<br>}</p>
+<p>table tr th, table tr td {<br>  font-size: 1em;<br>  border: 1px solid #CCC;<br>  padding: 0.5em 1em;<br>  text-align: left;<br>}<br>/<em>表头的属性</em>/<br>table tr th {<br> font-weight: bold;<br>  background-color: #F0F0F0;<br>}<br>/<em>================表格结束================</em>/</p>
+<p>.katex-display {/<em>数学公式</em>/<br>  font-size:1.5em;<br>}</p>
+<p>a[href^=”#”] sup<br>{/<em>注脚</em>/<br>  vertical-align:super;<br>  margin:0 2px;<br>  padding:1px 3px;<br>  color: #ffffff;<br>  background:#666666;<br>  font-size:0.7em;<br>}</p>
+<p>/<em>================任务列表开始================</em>/<br>.task-list-list {<br>  list-style-type: none;<br>}<br>.task-list-list.checked {/<em>已完成</em>/<br>  color: #3e3e3e;<br>}</p>
+<p>.task-list-list.uncheck {/<em>未完成</em>/<br>  color: #bfc1bf;<br>}<br>.task-list-list .icon_uncheck, .task-list-list .icon_check {<br>  display: inline-block;<br>  vertical-align: middle;<br>  margin-right: 10px;<br>}<br>.task-list-list .icon_check:before<br>{/<em>已完成</em>/<br>    content: “√”;<br>    border: 2px solid #3e3e3e;<br>    color:red;<br>}<br>.task-list-list .icon_uncheck:before<br>{/<em>未完成</em>/<br>   content: “x”;<br>   border: 2px solid #bfc1bf;<br>    color: #bfc1bf;<br>}<br>.task-list-list .icon_check:before, .task-list-list .icon_uncheck:before<br>{/<em>标志框</em>/<br>  padding:2px;<br>  padding-left: 5px;<br>  padding-right: 8px;<br>  border-radius:5px;<br>}<br>/<em>================任务列表结束================</em>/</p>
+<p>.toc<br>{/<em>总目录</em>/<br>  margin-left:25px;<br>}<br>.toc_item<br>{/<em>每条目录</em>/<br>  display:block;</p>
+<p>}<br>.toc_left<br>{/<em>每级目录的缩进</em>/<br>  margin-left:25px;<br>}</p>
+<p>###一些小提示： </p>
+<ul>
+<li><p>请点击左上角”编辑”图标再开始写作，这样就能自动保存写作内容，目前，所有保存的内容都是储存在本地浏览器缓存中(local storage)，所以,就算重新开机，这些内容都不会丢失的呵，但为了安全起见，在未实现帐号云同步功能前，请自行备份重要内容; </p>
+</li>
+<li><p><strong>“一键排版”</strong> 支持标准的css,已提供了不少的样式模板，但因为每个人的喜好不一样，所以，如果现有的样式模板不适合你，请尽情地自定义css样式吧。<br>就算改错了也就”恢复预设值”就OK了，所以不用担心呵。一旦掌握自定义css样式后，你就会知到它到底有多大的威力了 ^_^;</p>
+</li>
+</ul>
+<ul>
+<li><p>未做浏览器兼容测试，请尽可能使用 <strong>Chrome</strong> 浏览器作编辑! </p>
+</li>
+<li><p>未配备高容量的图片服务器，目前只支持已上传了的图片的链接。如果需要用到图片，<br>你可先在支持Markdown编辑的博客平台（如CSDN、掘金、简书等) 上编辑好你的Markdown内容，上传你所需要的所有图片(上传图片时，markdown内容会自动添加图片链接的)，并保存;<br>然后把Markdown内容copy到Md2All渲染;<br>最后”复制”,”粘贴”…”粘贴” ..到各个平台，整件事就完成了，简单吧;<br>当然，你也可以把图片上传到公众号，然后右键图片，选”复制图片地址”拿图片的链接地址;或把Md2All”复制”到公众号后再插入图片。</p>
+</li>
+<li><p>开发阶段，每个css样式模板的内容都有可能会更新，所以如果你有做过某样式的”保存”，你可能需要”恢复预设值”才能看到其最新的css样式。建议你整合自己喜欢的样式到”最爱样式”下，并在此基础上,在”最爱样式”页面下自定义css样式。</p>
+</li>
+<li><p>可能有些朋友同一篇文章中的标题都喜欢用不同的样式，只要把css样式模板下的<code>h1,h2,h3,h4,h5,h6</code>的 <code>font-size</code>,<code>color</code>等定义为你想要的样式,然后用<code>h1 ~ h6</code>来分别表示不同样式的标题就行了。<br>同理，不常用的:<code>em</code> 斜体 ,<code>del</code> 删除线,<code>strong em</code>强调的斜体,也可定义为自己想要的不同的样式,然后作为额外的功能使用。<br>你甚至可以直接用HTML和CSS来排版。请参考 <strong>“综合示例”</strong> 样式模板。</p>
+</li>
+<li><p>更多功能正在开发中，敬请关注。。。。。。</p>
+</li>
+</ul>
+<hr>
+<p>###先看看代码块显示效果<br>注：markdown对代码块的语法是开始和结束行都要添加：```,其中 ` 为windows键盘左上角那个，如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">public class MyActivity extends AppCompatActivity &#123;</span><br><span class="line">@Override  //override the function</span><br><span class="line">    protected void onCreate(@Nullable Bundle savedInstanceState) &#123;</span><br><span class="line">       super.onCreate(savedInstanceState);</span><br><span class="line">       try &#123;</span><br><span class="line">            OkhttpManager.getInstance().setTrustrCertificates(getAssets().open(&quot;mycer.cer&quot;);</span><br><span class="line">            OkHttpClient mOkhttpClient= OkhttpManager.getInstance().build();</span><br><span class="line">        &#125; catch (IOException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>要精确指定语言（如：<code>java,cpp,css,xml,javascript,python,php,go,kotlin,lua,objectivec</code>等等）时，在头部直接指定，如：```javascript，如下：</p>
+<pre><code class="javascript"><span class="function"><span class="keyword">function</span> <span class="title">DisplayWindowSize</span>(<span class="params"></span>)</span>{
+
+  <span class="keyword">var</span> w=<span class="built_in">window</span>.innerWidth
+  || <span class="built_in">document</span>.documentElement.clientWidth
+  || <span class="built_in">document</span>.body.clientWidth;
+}
+</code></pre>
+<p>注：当指定语言时,会自动保留代码中的空行<br>如果所有的”代码主题”都不符合你的要求，你可以参考”一键排版”下的”代码块样式”自定义自己喜欢的代码高亮</p>
+
+    </div>
+</article>
+
+
+                </div>
+                <aside class="col-md-4 gal-left" id="sidebar">
+    <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
+<aside id="sidebar-search">
+    <div class="search hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <form class="form-inline clearfix" id="search-form" method="get"
+              action="/search/index.html">
+            <input type="text" name="s" class="form-control" id="searchInput" placeholder="搜索文章~">
+            <button class="btn btn-danger btn-gal" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+</aside>
+    <aside id="sidebar-author">
+    <div class="panel panel-gal" data-aos="flip-right" data-aos-duration="3000">
+        <div class="panel-heading" style="text-align: center">
+            <i class="fa fa-quote-left"></i>
+            缪神徒弟
+            <i class="fa fa-quote-right"></i>
+        </div>
+        <div class="author-panel text-center">
+            <img src="/imgs/avatar.jpg" width="140" height="140"
+                 alt="个人头像" class="author-image">
+            <p class="author-description"><p>缪神的徒弟</p>
+</p>
+        </div>
+    </div>
+</aside>
+    
+    <aside id="sidebar-recent_comments">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-comments"></i>
+            最新评论
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush"></ul>
+    </div>
+</aside>
+    
+    <!-- 要配置好leancloud才能开启此小工具 -->
+    
+    
+    <aside id="sidebar-recent_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            近期文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/05/22/markdown排版/">markdown排版</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/05/16/hello-world/">Hello World</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="sidebar-rand_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            随机文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/05/16/hello-world/">Hello World</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/05/22/markdown排版/">markdown排版</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="gal-sets">
+        <div class="panel panel-gal hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+            <ul class="nav nav-pills pills-gal">
+                <li class="">
+                    <a href="/2018/05/22/markdown排版/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                </li>
+                <li class="">
+                    <a href="/2018/05/22/markdown排版/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                </li>
+                <li class="">
+                    <a href="/2018/05/22/markdown排版/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
+    
+</div>
+                <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
+    
+    <li>
+        <a href="http://kdays.net/days/" target="_blank">KDays Forum</a>
+    </li>
+    
+    <li>
+        <a href="http://www.gal123.com/" target="_blank">绅士导航♂</a>
+    </li>
+    
+    <li>
+        <a href="http://www.moe123.com/" target="_blank">萌导航</a>
+    </li>
+    
+</div>
+                <div class="links tab-pane nav bs-sidenav fade" id="sidebar-links">
+    
+    <li>
+        <a href="https://github.com/742776191/" target="_blank">Github</a>
+    </li>
+    
+    <li>
+        <a href="http://blogsonline.cn/" target="_blank">博客</a>
+    </li>
+    
+</div>
+            </div>
+        </div>
+    </aside>
+    
+</aside>
+            </div>
+        </div>
+    </div>
+    <footer id="gal-footer">
+    <div class="container">
+        Copyright © 2018 缪神徒弟 Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>.&nbsp;Theme by <a href="https://github.com/ZEROKISEKI" target="_blank">AONOSORA</a>
+    </div>
+</footer>
+
+<!-- 回到顶端 -->
+<div id="gal-gotop">
+    <i class="fa fa-angle-up"></i>
+</div>
+</body>
+<script src="/js/activate-power-mode.js"></script>
+<script>
+
+    // 配置highslide
+	hs.graphicsDir = '/js/highslide/graphics/'
+    hs.outlineType = "rounded-white";
+    hs.dimmingOpacity = 0.8;
+    hs.outlineWhileAnimating = true;
+    hs.showCredits = false;
+    hs.captionEval = "this.thumb.alt";
+    hs.numberPosition = "caption";
+    hs.align = "center";
+    hs.transitions = ["expand", "crossfade"];
+    hs.lang.number = '共%2张图, 当前是第%1张';
+    hs.addSlideshow({
+      interval: 5000,
+      repeat: true,
+      useControls: true,
+      fixedControls: "fit",
+      overlayOptions: {
+        opacity: 0.75,
+        position: "bottom center",
+        hideOnMouseOut: true
+      }
+    })
+
+    // 初始化aos
+    AOS.init({
+      duration: 1000,
+      delay: 0,
+      easing: 'ease-out-back'
+    });
+
+</script>
+<script>
+	POWERMODE.colorful = 'true';    // make power mode colorful
+	POWERMODE.shake = 'true';       // turn off shake
+	// TODO 这里根据具体情况修改
+	document.body.addEventListener('input', POWERMODE);
+</script>
+<script>
+    window.slideConfig = {
+      prefix: '/imgs/slide/background',
+      ext: 'jpg',
+      maxCount: '6'
+    }
+</script>
+<script src="/js/hs.js"></script>
+<script src="/js/blog.js"></script>
+
+<script src="/js/oni.js"></script>
+
+
+
+</html>
